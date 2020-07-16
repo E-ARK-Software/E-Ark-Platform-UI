@@ -55,7 +55,7 @@ angular
     });
 
 function config($mdThemingProvider, $stateProvider, $urlRouterProvider, USER_ROLES) {
-    
+
     $mdThemingProvider.definePalette('earkStyle', {
         '50': 'FFB49F',
         '100': 'FF9885',
@@ -74,12 +74,12 @@ function config($mdThemingProvider, $stateProvider, $urlRouterProvider, USER_ROL
         'contrastDefaultColor': 'light', // whether, by default, text (contrast) on this palette should be dark or light
         'contrastDarkColors': ['50', '100', '200', '300', '400', 'A100'] //hues which contrast should be 'dark' by default
     });
-    
+
     $mdThemingProvider.theme('default')
         .primaryPalette('earkStyle')
         .accentPalette('grey')
         .warnPalette('amber');
-    
+
     $urlRouterProvider
         .otherwise('/login');
 

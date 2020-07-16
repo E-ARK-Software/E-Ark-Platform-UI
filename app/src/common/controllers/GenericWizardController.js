@@ -42,7 +42,7 @@ function GenericWizardController($mdDialog) {
      * Create filter function for a query string
      */
     function createFilterFor(query) {
-        var lowercaseQuery = angular.lowercase(query);
+        var lowercaseQuery = angular.$$lowercase(query);
         return function filterFn(item) {
             return (item.name.toLowerCase().indexOf(lowercaseQuery) > -1);
         };

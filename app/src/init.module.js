@@ -1,3 +1,4 @@
+angular.$$lowercase = text => text.toLowerCase();
 angular
     .module('eArkPlatform.init', ['ngMaterial'])
     .constant('USER_ROLES', {
